@@ -1,0 +1,362 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Ambiental: Alcaldía Cuauhtémoc</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-padding {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navegación -->
+    <nav class="bg-teal-700 text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold flex items-center gap-2">
+                <i class="fas fa-recycle"></i>
+                <span>Proyecto Cuauhtémoc</span>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#inicio" class="hover:text-teal-200 transition">Inicio</a>
+                <a href="#objetivos" class="hover:text-teal-200 transition">Objetivos</a>
+                <a href="#justificacion" class="hover:text-teal-200 transition">Justificación</a>
+                <a href="#organizacion" class="hover:text-teal-200 transition">Organización</a>
+                <a href="#equipo" class="hover:text-teal-200 transition">Equipo</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-teal-800 px-6 py-4">
+            <a href="#inicio" class="block py-2 hover:text-teal-200">Inicio</a>
+            <a href="#objetivos" class="block py-2 hover:text-teal-200">Objetivos</a>
+            <a href="#justificacion" class="block py-2 hover:text-teal-200">Justificación</a>
+            <a href="#organizacion" class="block py-2 hover:text-teal-200">Organización</a>
+            <a href="#equipo" class="block py-2 hover:text-teal-200">Equipo</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="inicio" class="hero-bg h-screen flex items-center justify-center text-center text-white px-4">
+        <div class="max-w-4xl animate-fade-in-up">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Afectación por Basura y Saturación de Coladeras</h1>
+            <p class="text-xl md:text-2xl mb-8 font-light">Una iniciativa para mejorar las condiciones de depósitos y separación de residuos en la Alcaldía Cuauhtémoc.</p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#objetivos" class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-3 px-8 rounded-full transition shadow-lg">
+                    Ver Objetivos
+                </a>
+                <a href="#justificacion" class="bg-white hover:bg-gray-100 text-teal-700 font-bold py-3 px-8 rounded-full transition shadow-lg">
+                    Leer Justificación
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Objetivos Section (Fase 1) -->
+    <section id="objetivos" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Objetivos y Metas</h2>
+                <div class="h-1 w-20 bg-teal-500 mx-auto rounded"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Nuestro plan estratégico para el periodo 2025-2026.</p>
+            </div>
+
+            <!-- Objetivo General -->
+            <div class="bg-teal-50 border-l-4 border-teal-500 p-8 mb-12 rounded-r-lg shadow-sm">
+                <h3 class="text-2xl font-bold text-teal-800 mb-2">Objetivo General</h3>
+                <p class="text-lg text-gray-700">Mejorar para el 2026 las condiciones de depósitos y separar basura para reducir inundaciones en la Alcaldía Cuauhtémoc, mediante estrategias de limpieza y concientización ciudadana.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Objetivo 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-4 text-blue-600">
+                        <i class="fas fa-water text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Reducir Inundaciones</h4>
+                    <p class="text-gray-600 mb-4">Minimizar la afectación de las coladeras saturadas por residuos sólidos.</p>
+                    <ul class="text-sm text-gray-500 list-disc list-inside">
+                        <li>Limpieza total de coladeras.</li>
+                        <li>Reducción de tráfico por inundaciones.</li>
+                    </ul>
+                </div>
+
+                <!-- Objetivo 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-4 text-green-600">
+                        <i class="fas fa-users text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Concientización</h4>
+                    <p class="text-gray-600 mb-4">Educar a la población sobre la correcta separación de basura orgánica e inorgánica.</p>
+                    <ul class="text-sm text-gray-500 list-disc list-inside">
+                        <li>Talleres informativos.</li>
+                        <li>Cultura de uso de depósitos.</li>
+                    </ul>
+                </div>
+
+                <!-- Objetivo 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 hover:-translate-y-2 transition duration-300">
+                    <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-4 text-red-600">
+                        <i class="fas fa-heartbeat text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Salud Pública</h4>
+                    <p class="text-gray-600 mb-4">Reducir infecciones y enfermedades como el Dengue causadas por la acumulación de basura.</p>
+                    <ul class="text-sm text-gray-500 list-disc list-inside">
+                        <li>Menos focos de infección.</li>
+                        <li>Calles más limpias y seguras.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Justificación Section (Fase 2) -->
+    <section id="justificacion" class="section-padding bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <!-- Imagen actualizada con el archivo del usuario -->
+                    <img 
+                        src="62f155843230f951155698.jpg" 
+                        onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80';"
+                        alt="Trabajadores de limpia en la CDMX" 
+                        class="rounded-lg shadow-xl w-full h-auto object-cover"
+                    >
+                    <p class="text-xs text-gray-500 mt-2 text-center italic">Referencia: La importancia de los trabajadores de limpia.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">¿Por qué es importante?</h2>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        Este proyecto es vital para la comunidad de la Alcaldía Cuauhtémoc. El beneficio es común: evitar el caos vial por inundaciones implica menores gastos económicos para las personas que sufren daños en sus vehículos y hogares durante la temporada de lluvias.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-teal-500 mt-1 mr-3"></i>
+                            <div>
+                                <h5 class="font-bold">Impacto Ambiental</h5>
+                                <p class="text-sm text-gray-600">Protección de la zona céntrica de la CDMX y reducción de contaminación.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-teal-500 mt-1 mr-3"></i>
+                            <div>
+                                <h5 class="font-bold">Impacto Social</h5>
+                                <p class="text-sm text-gray-600">Mejora de la imagen urbana ante el turismo mundial y local.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-teal-500 mt-1 mr-3"></i>
+                            <div>
+                                <h5 class="font-bold">Impacto Económico</h5>
+                                <p class="text-sm text-gray-600">Prevención de pérdidas materiales en hogares y transporte.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organización Section (Fase 3: Tabla) -->
+    <section id="organizacion" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Organización y Recursos</h2>
+                <div class="h-1 w-20 bg-teal-500 mx-auto rounded"></div>
+                <p class="mt-4 text-gray-600">Distribución de actividades, tareas y recursos necesarios para la implementación.</p>
+            </div>
+
+            <!-- Tabla Responsive -->
+            <div class="overflow-x-auto shadow-md rounded-lg">
+                <table class="min-w-full text-sm text-left text-gray-500">
+                    <thead class="text-xs text-white uppercase bg-teal-600">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">Fase</th>
+                            <th scope="col" class="px-6 py-3">Actividad</th>
+                            <th scope="col" class="px-6 py-3">Tareas Principales</th>
+                            <th scope="col" class="px-6 py-3">Recursos Clave</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Fase 1 -->
+                        <tr class="bg-white border-b hover:bg-gray-50">
+                            <td class="px-6 py-4 font-bold text-gray-900">1. Previas</td>
+                            <td class="px-6 py-4">Investigación de datos y estadísticas</td>
+                            <td class="px-6 py-4">
+                                <ul class="list-disc list-inside">
+                                    <li>Recopilar evidencia fotográfica.</li>
+                                    <li>Estadística por colonia.</li>
+                                </ul>
+                            </td>
+                            <td class="px-6 py-4">Computadora, Internet, Cámara. (Sin costo extra)</td>
+                        </tr>
+                        <!-- Fase 2 -->
+                        <tr class="bg-gray-50 border-b hover:bg-gray-100">
+                            <td class="px-6 py-4 font-bold text-gray-900">2. Desarrollo</td>
+                            <td class="px-6 py-4">Diseño y Material Gráfico</td>
+                            <td class="px-6 py-4">
+                                <ul class="list-disc list-inside">
+                                    <li>Diseñar infografías y carteles.</li>
+                                    <li>Convocatoria a vecinos.</li>
+                                </ul>
+                            </td>
+                            <td class="px-6 py-4">Cartulinas, plumones, Impresiones ($200.00 aprox).</td>
+                        </tr>
+                        <!-- Fase 3 -->
+                        <tr class="bg-white border-b hover:bg-gray-50">
+                            <td class="px-6 py-4 font-bold text-gray-900">3. Concreción</td>
+                            <td class="px-6 py-4">Ejecución de Talleres</td>
+                            <td class="px-6 py-4">
+                                <ul class="list-disc list-inside">
+                                    <li>Impartir taller en parques.</li>
+                                    <li>Informe de resultados.</li>
+                                </ul>
+                            </td>
+                            <td class="px-6 py-4">Material didáctico, espacio público.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="mt-8 text-center">
+                 <p class="text-sm text-gray-500 mb-4">* El recurso humano es el más importante para el éxito de este proyecto.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva Sección: Diagrama de Gantt (Fase 5) -->
+    <section id="gantt" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Gestión del Tiempo (Diagrama de Gantt)</h2>
+                <div class="h-1 w-20 bg-teal-500 mx-auto rounded"></div>
+                <p class="mt-4 text-gray-600">Planificación temporal de las fases del proyecto.</p>
+            </div>
+            
+            <div class="bg-white p-4 rounded-lg shadow-lg overflow-hidden flex justify-center">
+                 <!-- Imagen del Diagrama de Gantt subida por el usuario -->
+                 <img 
+                    src="image_b87256.png" 
+                    onerror="this.onerror=null; this.src='https://via.placeholder.com/800x400?text=Diagrama+de+Gantt+no+disponible';"
+                    alt="Diagrama de Gantt del Proyecto" 
+                    class="max-w-full h-auto rounded border border-gray-200"
+                >
+            </div>
+            <p class="text-center text-sm text-gray-500 mt-4">Visualización de la cronología de actividades para las Fases 1, 2 y 3.</p>
+        </div>
+    </section>
+
+    <!-- Equipo Section (Fase 4) -->
+    <section id="equipo" class="section-padding bg-teal-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-8">División del Trabajo</h2>
+            <p class="max-w-3xl mx-auto text-lg mb-12 text-teal-100">
+                La colaboración es esencial. Si bien el proyecto inicia de forma individual, la integración de vecinos y voluntarios agiliza las metas y reduce el estrés de la gestión.
+            </p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Rol 1 -->
+                <div class="bg-teal-700 p-6 rounded-lg shadow-xl">
+                    <div class="w-16 h-16 bg-white rounded-full mx-auto flex items-center justify-center mb-4">
+                        <i class="fas fa-user-tie text-teal-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Gestor del Proyecto</h3>
+                    <p class="text-teal-200 text-sm">Responsable general, planificación, finanzas y coordinación de actividades. (Betty Ocampo)</p>
+                </div>
+                <!-- Rol 2 -->
+                <div class="bg-teal-700 p-6 rounded-lg shadow-xl">
+                    <div class="w-16 h-16 bg-white rounded-full mx-auto flex items-center justify-center mb-4">
+                        <i class="fas fa-chalkboard-teacher text-teal-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Apoyo Logístico / Talleristas</h3>
+                    <p class="text-teal-200 text-sm">Voluntarios para impartir las pláticas de concientización y distribuir material.</p>
+                </div>
+                <!-- Rol 3 -->
+                <div class="bg-teal-700 p-6 rounded-lg shadow-xl">
+                    <div class="w-16 h-16 bg-white rounded-full mx-auto flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-teal-800 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Vecinos Vigilantes</h3>
+                    <p class="text-teal-200 text-sm">Comunidad encargada de mantener la limpieza y reportar anomalías.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Control y Escenarios (Fase 6) -->
+    <section class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Control: Medición y Escenarios</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Mejor Escenario -->
+                <div class="bg-green-50 border border-green-200 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-smile-beam text-green-500 text-3xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-green-800">El Mejor Escenario</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        La comunidad participa activamente, se reduce la basura en las calles y las inundaciones disminuyen significativamente para el 2026.
+                    </p>
+                    <span class="inline-block bg-green-200 text-green-800 text-xs px-2 py-1 rounded font-semibold">Acción: Mantener difusión constante</span>
+                </div>
+
+                <!-- Peor Escenario -->
+                <div class="bg-red-50 border border-red-200 p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-frown text-red-500 text-3xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-red-800">El Peor Escenario</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        Baja participación vecinal y persistencia de basura en coladeras, manteniendo el riesgo de inundaciones e infecciones.
+                    </p>
+                    <span class="inline-block bg-red-200 text-red-800 text-xs px-2 py-1 rounded font-semibold">Acción: Rediseñar estrategias de comunicación</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h4 class="text-white text-lg font-bold">Proyecto Integrador - Módulo 23</h4>
+                    <p class="mt-2">Alumna: Betty Ocampo García</p>
+                    <p>Grupo: M23C2G55-036</p>
+                    <p>Profesor: Juan Bravo Ávila</p>
+                </div>
+                <div class="flex space-x-6">
+                    <!-- Links simulados a los recursos mencionados -->
+                    <a href="#" class="hover:text-white transition" title="Ver Diagrama de Gantt"><i class="fas fa-chart-bar text-2xl"></i></a>
+                    <a href="#" class="hover:text-white transition" title="Ver Video Fase 3"><i class="fab fa-youtube text-2xl"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-sm">
+                <p>&copy; 2025 Proyecto Escolar Prepa en Línea SEP. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
